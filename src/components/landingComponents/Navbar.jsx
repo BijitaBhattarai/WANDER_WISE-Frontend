@@ -16,7 +16,9 @@ const Navbar = () => {
           <a href="#">Famous Trip</a>
           <a href="#">Contact</a>
         </nav>
-        <CustomButton text="Sign in" />
+        <a href="/signin">
+          <CustomButton text="Sign in" />
+        </a>
       </div>
     </header>
   );

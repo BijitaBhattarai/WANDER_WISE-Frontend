@@ -7,15 +7,19 @@ import FamousTrip from "../components/landingComponents/FamousTrip";
 import About from "../components/landingComponents/About";
 import Contact from "../components/landingComponents/Contact";
 import Footer from "../components/landingComponents/Footer";
+import Banner from "@/components/landingComponents/Banner";
+import Reviews from "@/components/landingComponents/Reviews";
 
 const LandingPage = () => {
   return (
     <>
       <Navbar />
       <Hero />
+      <Banner />
       <Features />
       <FamousTrip />
       <About />
+      <Reviews />
       <Contact />
       <Footer />
     </>

@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold text-gray-200 mb-4">WanderWise</h2>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             Explore, plan, and book your perfect trip with WanderWise. Your
             adventure starts here!
           </p>
@@ -152,7 +152,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom line */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm">
+      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-300 text-sm">
         © {new Date().getFullYear()} WanderWise. All rights reserved.
       </div>
     </footer>
