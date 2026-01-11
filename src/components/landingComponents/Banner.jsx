@@ -6,7 +6,7 @@ const Banner = () => {
       <p className="text-sm text-center text-gray-500 mb-8">
         Trusted by 20,000+ travelers worldwide
       </p>
-      <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale font-bold text-3xl tracking-tighter">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 greenscale font-bold text-3xl tracking-tighter text-green-700">
         <div>TRAVELER</div>
         <div>NOMAD</div>
         <div>WANDER</div>

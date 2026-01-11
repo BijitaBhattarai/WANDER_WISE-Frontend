@@ -1,30 +1,30 @@
 import React from "react";
 import CustomButton from "../common/CustomButton";
+import useAuth from "@/hooks/useAuth";
 
-const Navbar = () => {
+const AppNavbar = () => {
+  const { logout } = useAuth();
   return (
     <header className=" flex justify-between items-center px-12 py-4">
       {/* left navbar */}
       <div className=" flex flex-row gap-5 items-center justify-center">
         <img className="w-12 h-12" src="public/logo.png" alt="logo" />
         <div>
-          <h2 className="text-4xl text-green-600 font-bold">Wander-wise</h2>
+          <h2 className="text-4xl font-bold">Wander-wise</h2>
         </div>
       </div>
       {/* right navbar */}
       <div className="flex items-center gap-10">
         <nav className="flex items-center gap-6 [&>a]:text-lg [&>a]:font-medium [&>a]:hover:text-green-600">
-          <a href="#">Features</a>
-          <a href="#">About</a>
-          <a href="#">Famous Trip</a>
-          <a href="#">Contact</a>
+          <a href="/dashboard">Dashboard</a>
+          <a href="trips">Trips</a>
+          <a href="itineraries">Itineraries</a>
+          <a href="baggage">Baggage</a>
         </nav>
-        <a href="/signin">
-          <CustomButton text="Sign in" />
-        </a>
+        <CustomButton text="Logout" onClick={logout} />
       </div>
     </header>
   );
 };
 
-export default Navbar;
+export default AppNavbar;
