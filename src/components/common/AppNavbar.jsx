@@ -5,7 +5,7 @@ import useAuth from "@/hooks/useAuth";
 const AppNavbar = () => {
   const { logout } = useAuth();
   return (
-    <header className=" flex justify-between items-center px-12 py-4">
+    <header className=" flex justify-between items-center px-12 py-4 border-b border-gray-300 shadow-lg">
       {/* left navbar */}
       <div className=" flex flex-row gap-5 items-center justify-center">
         <img className="w-12 h-12" src="public/logo.png" alt="logo" />

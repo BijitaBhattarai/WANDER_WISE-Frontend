@@ -58,7 +58,7 @@ export default function Register() {
   const navigate = useNavigate();
   const form = useForm({
     resolver: zodResolver(formSchema),
-    mode: "onChange", // ✅ validate while typing
+    mode: "onChange", // validate while typing
     reValidateMode: "onChange",
     defaultValues: {
       name: "",
