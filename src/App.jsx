@@ -9,6 +9,7 @@ import { jwtDecode } from "jwt-decode";
 import AppLayout from "./components/layouts/AppLayout";
 import TripsPage from "./pages/trips/TripsPage";
 import EditTripPage from "./pages/trips/EditTripPage";
+import AddTripPage from "./pages/trips/AddTripPage";
 
 export default function App() {
   const { token, logout } = useAuth();
