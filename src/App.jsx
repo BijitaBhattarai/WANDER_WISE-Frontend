@@ -51,7 +51,7 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/trips" element={<TripsPage />} />
           <Route path="/trips/add" element={<AddTripPage />} />
-          <Route path="/trips/add/:id" element={<EditTripPage />} />
+          <Route path="/trips/edit/:id" element={<EditTripPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
