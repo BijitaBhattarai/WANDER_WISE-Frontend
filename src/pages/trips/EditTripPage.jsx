@@ -13,7 +13,7 @@ const EditTripPage = () => {
   const { id } = useParams();
   const { loading, data, error } = useApi(`/trips/${id}`);
   if (loading) return <div>Loading...</div>;
-  console.log(data);
+
   const formattedData = {
     ...data,
     startDate: data?.startDate.split("T")[0],
