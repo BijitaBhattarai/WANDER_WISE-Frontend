@@ -18,6 +18,7 @@ import { CalendarDays } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TripNavigation from "@/components/trips/TripNavigation";
 import AddExpense from "@/components/trips/AddExpense";
+import InviteCollaborator from "@/components/trips/InviteCollaborator";
 
 const TripDetailsPage = () => {
   const { id } = useParams();
@@ -43,8 +44,8 @@ const TripDetailsPage = () => {
   return (
     <section className="px-20 py-8 ">
       <div className="flex gap-6">
-        <div className="w-2/3">
-          <Card className="w-full h-[80dvh]">
+        <div className="w-2/3 ">
+          <Card className="w-full ">
             <CardHeader>
               <CardTitle className="text-2xl">{trip.title}</CardTitle>
               <CardDescription className="flex items-center justify-between">
@@ -152,7 +153,8 @@ const TripDetailsPage = () => {
 
         <div className="w-1/3 flex flex-col gap-4">
           <TripNavigation trip={trip} />
-          <AddExpense trip={trip} />
+          <AddExpense trip={trip} setDependency={setDependency} />
+          <InviteCollaborator trip={trip} setDependency={setDependency} />
         </div>
       </div>
     </section>

@@ -51,7 +51,7 @@ const TripCard = ({ trip, setDependency }) => {
         </CardDescription>
         <CardAction>
           <DropdownMenu>
-            <DropdownMenuTrigger>
+            <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
                 <MoreVertical />
               </Button>

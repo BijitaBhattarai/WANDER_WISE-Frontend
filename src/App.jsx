@@ -11,6 +11,7 @@ import TripsPage from "./pages/trips/TripsPage";
 import EditTripPage from "./pages/trips/EditTripPage";
 import AddTripPage from "./pages/trips/AddTripPage";
 import TripDetailsPage from "./pages/trips/TripDetailsPage";
+import AcceptInvitation from "./pages/AcceptInvitation";
 
 export default function App() {
   const { token, logout } = useAuth();
@@ -54,6 +55,10 @@ export default function App() {
           <Route path="/trips/add" element={<AddTripPage />} />
           <Route path="/trips/edit/:id" element={<EditTripPage />} />
           <Route path="/trips/:id" element={<TripDetailsPage />} />
+          <Route
+            path="/trips/:id/invite/accept"
+            element={<AcceptInvitation />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
