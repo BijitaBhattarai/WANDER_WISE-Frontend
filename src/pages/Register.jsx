@@ -29,7 +29,7 @@ import useAuth from "@/hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { Eye, EyeOff } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const formSchema = z
   .object({
@@ -54,8 +54,15 @@ const formSchema = z
   });
 
 export default function Register() {
-  const { login } = useAuth();
+  const { login, token } = useAuth();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (token) {
+      navigate("/dashboard");
+    }
+  }, [token]);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     mode: "onChange", // validate while typing

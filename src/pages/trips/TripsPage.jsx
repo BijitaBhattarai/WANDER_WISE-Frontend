@@ -1,7 +1,7 @@
 import TripCard from "@/components/trips/TripCard";
 import { Button } from "@/components/ui/button";
 import useApi from "@/hooks/useApi";
-import { MoreVertical, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import React, { useState } from "react";
 
 const TripsPage = () => {
@@ -20,6 +20,7 @@ const TripsPage = () => {
           </Button>
         </a>
       </div>
+      {/* trips content */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
         {data.length === 0 ? (
           <div>No trips found. Please add a trip.</div>

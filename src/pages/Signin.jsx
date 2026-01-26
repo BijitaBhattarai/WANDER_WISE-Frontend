@@ -27,7 +27,7 @@ import { useNavigate } from "react-router-dom";
 import { loginUser } from "@/api/auth";
 import { toast } from "sonner";
 import { Eye, EyeOff } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const formSchema = z.object({
   email: z.string().min(2, {
@@ -39,8 +39,15 @@ const formSchema = z.object({
 });
 
 export default function Signin() {
-  const { login } = useAuth();
+  const { login, token } = useAuth();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (token) {
+      navigate("/dashboard");
+    }
+  }, [token]);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
