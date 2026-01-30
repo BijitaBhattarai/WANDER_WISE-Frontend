@@ -13,7 +13,7 @@ const ItinerariesDetails = () => {
     <section className="px-20 py-8">
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold">Your Itineraries</h1>
-        <a href="/trips/add">
+        <a href="/itineraries/add">
           <Button>
             <Plus />
             Add Itineraries
