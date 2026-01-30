@@ -17,9 +17,9 @@ const AppNavbar = () => {
       <div className="flex items-center gap-10">
         <nav className="flex items-center gap-6 [&>a]:text-lg [&>a]:font-medium [&>a]:hover:text-green-600">
           <a href="/dashboard">Dashboard</a>
-          <a href="trips">Trips</a>
-          <a href="itineraries">Itineraries</a>
-          <a href="baggage">Baggage</a>
+          <a href="/trips">Trips</a>
+          <a href="/itineraries">Itineraries</a>
+          <a href="/baggage">Baggage</a>
         </nav>
         <CustomButton text="Logout" onClick={logout} />
       </div>
