@@ -23,7 +23,7 @@ const AddItineraries = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <ItinerariesForm />
+          <ItinerariesForm type="add" />
         </CardContent>
       </Card>
     </section>
