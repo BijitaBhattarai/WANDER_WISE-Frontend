@@ -83,7 +83,7 @@ export default function Signin() {
                 <span>Sign In</span>
                 <img
                   className="absolute right-0 top-0 w-12 h-12"
-                  src="public/logo.png"
+                  src="/logo.png"
                   alt="logo"
                 />
               </CardTitle>

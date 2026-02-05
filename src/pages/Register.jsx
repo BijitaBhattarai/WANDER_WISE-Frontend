@@ -104,7 +104,7 @@ export default function Register() {
                 <span>Sign Up</span>
                 <img
                   className="absolute top-0 right-0 w-12 h-12"
-                  src="public/logo.png"
+                  src="/logo.png"
                   alt=""
                 />
               </CardTitle>

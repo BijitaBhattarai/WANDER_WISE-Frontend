@@ -6,7 +6,7 @@ const Navbar = () => {
     <header className=" flex justify-between items-center px-12 py-4">
       {/* left navbar */}
       <div className=" flex flex-row gap-5 items-center justify-center">
-        <img className="w-12 h-12" src="public/logo.png" alt="logo" />
+        <img className="w-12 h-12" src="/logo.png" alt="logo" />
         <div>
           <h2 className="text-4xl text-green-600 font-bold">Wander-wise</h2>
         </div>
