@@ -21,7 +21,7 @@ const EditItineraries = () => {
 
   const formattedData = {
     ...data,
-    date: date?.date.split("T")[0],
+    date: data?.date.split("T")[0],
   };
   console.log(formattedData);
 

@@ -1,5 +1,6 @@
 import api from "@/api/axios";
 import BaggageDialog from "@/components/baggage/BaggageDialog";
+import Loading from "@/components/common/Loading";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -57,7 +58,7 @@ const BaggageDetails = () => {
       toast.error("Some error occured.");
     }
   };
-  if (loading) return <div>loading</div>;
+  if (loading) return <Loading />;
   return (
     <section className="py-8 px-20">
       {/* heading */}

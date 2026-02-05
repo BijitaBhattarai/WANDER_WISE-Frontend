@@ -9,8 +9,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import ItinerariesForm from "@/components/itineraries/ItinerariesForm";
+import { useSearchParams } from "react-router-dom";
 
 const AddItineraries = () => {
+  const [searchParams] = useSearchParams();
+  const thisDate = searchParams.get("date");
   return (
     <section>
       <Card className=" w-3/5 mx-auto my-8">
@@ -23,7 +26,7 @@ const AddItineraries = () => {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <ItinerariesForm type="add" />
+          <ItinerariesForm type="add" thisDate={thisDate} />
         </CardContent>
       </Card>
     </section>

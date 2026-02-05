@@ -1,3 +1,4 @@
+import Loading from "@/components/common/Loading";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -13,7 +14,7 @@ import React from "react";
 
 const BaggagePage = () => {
   const { loading, error, data } = useApi("/trips");
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
 
   return (
     <section className="py-6 px-20">

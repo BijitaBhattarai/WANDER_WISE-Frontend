@@ -1,3 +1,4 @@
+import Loading from "@/components/common/Loading";
 import TripCard from "@/components/trips/TripCard";
 import { Button } from "@/components/ui/button";
 import useApi from "@/hooks/useApi";
@@ -7,7 +8,7 @@ import React, { useState } from "react";
 const TripsPage = () => {
   const [dependency, setDependency] = useState(0);
   const { data, error, loading } = useApi("/trips", {}, [dependency]);
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
 
   return (
     <section className="py-6 px-20">
