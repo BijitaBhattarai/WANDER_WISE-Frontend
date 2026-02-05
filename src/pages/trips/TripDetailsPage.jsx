@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import TripNavigation from "@/components/trips/TripNavigation";
 import AddExpense from "@/components/trips/AddExpense";
 import InviteCollaborator from "@/components/trips/InviteCollaborator";
+import Loading from "@/components/common/Loading";
 
 const TripDetailsPage = () => {
   const { id } = useParams();
@@ -31,7 +32,7 @@ const TripDetailsPage = () => {
   } = useApi(`/trips/${id}`, {}, [dependency]);
   console.log(trip);
 
-  if (loading) return <div className="text-center mt-10">Loading...</div>;
+  if (loading) return <Loading />;
   if (error) return <div>Error loading trip</div>;
 
   const formatDate = (dateString) => {

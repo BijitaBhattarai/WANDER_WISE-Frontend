@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import useApi from "@/hooks/useApi";
 import ItinerariesForm from "@/components/itineraries/ItinerariesForm";
+import Loading from "@/components/common/Loading";
 
 const EditItineraries = () => {
   const { tripId, itineraryId } = useParams();
@@ -17,7 +18,7 @@ const EditItineraries = () => {
     `/${tripId}/itineraries/${itineraryId}`,
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
 
   const formattedData = {
     ...data,

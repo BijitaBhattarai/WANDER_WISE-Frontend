@@ -8,11 +8,12 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import useApi from "@/hooks/useApi";
+import Loading from "@/components/common/Loading";
 
 const EditTripPage = () => {
   const { id } = useParams();
   const { loading, data, error } = useApi(`/trips/${id}`);
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading />;
 
   const formattedData = {
     ...data,
