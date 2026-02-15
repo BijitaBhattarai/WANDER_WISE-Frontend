@@ -72,7 +72,7 @@ export default function Dashboard() {
           className="relative rounded-lg overflow-hidden h-64 md:h-80 lg:h-96 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url(https://plus.unsplash.com/premium_photo-1672116453000-c31b150f48ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+              "url(https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=1470&auto=format&fit=crop)",
           }}
         >
           {/* Dim overlay */}
